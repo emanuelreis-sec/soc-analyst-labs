@@ -21,21 +21,42 @@ Understand how attackers identify and exploit vulnerabilities in web application
 
 ### Actions Performed
 - Accessed the Fakebank application via the virtual desktop.
-- Identified account number: **8881**
+- Identified account number: **8881** displayed on the login page.
+- Noted that sensitive information is exposed directly on the page.
 
-### Directory Enumeration
-- Used `dirb` to discover hidden directories.
+### Observations
+- Exposed account numbers represent a serious vulnerability.
+- This highlights the importance of securing sensitive fields in web applications.
+
+### Evidence
+
+**Fakebank account identification (account 8881):**
+![Fakebank Account](fakebank-account.png)
+
+### Blue Team Insight
+- Sensitive data exposure should trigger immediate review and patching.
+- Web applications must validate and limit what information is displayed to unauthorized users.
+
+---
+
+## Task 3 – Find Hidden Pages
+
+### Actions Performed
+- Performed directory enumeration using `dirb` to discover hidden endpoints.
+- Objective: identify potential vulnerabilities and exposed sensitive resources.
 
 ### Findings
 - `/bank-transfer` → HTTP 200 (accessible sensitive function)
 - `/images` → HTTP 301 (redirected resource)
 
 ### Observations
-- Hidden endpoints may expose critical functionalities.
+- Hidden endpoints may expose critical functionalities to attackers.
 - Directory enumeration is a common reconnaissance technique used by attackers.
 
 ### Evidence
-- Screenshot of enumeration results
+
+**Directory Enumeration using dirb:**
+![Dirb Scan](dirb-scan.png)
 
 ### Blue Team Insight
 - Monitor unusual request patterns (e.g., directory brute-forcing).
@@ -73,11 +94,19 @@ Understand how attackers identify and exploit vulnerabilities in web application
 - Monitor and log all admin activity
 - Apply least privilege principle
 
+### Evidence
+
+**General view of Admin Page:**
+![Admin Page](admin-page.png)
+
+**Admin panel access and unauthorized transaction to account 8881:**
+![Admin Panel Unauthorized Transfer](admin-panel-unauthorized-transfer.png)
+
 ### Blue Team Insight
 - Critical assets must be protected with layered security controls.
 - Continuous monitoring is essential to detect unauthorized access attempts.
 
-----
+---
 
 ## Final Thoughts
 
