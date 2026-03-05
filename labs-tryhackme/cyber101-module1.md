@@ -2,6 +2,6 @@
 
 ## Objective
 Explore computing networking and cryptography
-Lear the basics of Linux, Windows, and AD
+Learn the basics of Linux, Windows, and AD
 Explore the world of offensive cyber security
 Discover the techniques of defensive security
