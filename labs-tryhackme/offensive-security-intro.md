@@ -31,7 +31,9 @@ Understand how attackers identify and exploit vulnerabilities in web application
 ### Evidence
 
 **Fakebank account identification (account 8881):**
-![Fakebank Account](fakebank-account.png)
+
+<img width="1362" height="767" alt="fakebank-accounts-sensitive-information png" src="https://github.com/user-attachments/assets/3b1135bb-2799-4ef0-8188-680902e8e9fe" />
+
 
 ### Blue Team Insight
 - Sensitive data exposure should trigger immediate review and patching.
@@ -56,7 +58,8 @@ Understand how attackers identify and exploit vulnerabilities in web application
 ### Evidence
 
 **Directory Enumeration using dirb:**
-![Dirb Scan](dirb-scan.png)
+
+<img width="1364" height="766" alt="dirb-scan png" src="https://github.com/user-attachments/assets/52bab304-029e-4b8d-b4a7-c31630e40d7b" />
 
 ### Blue Team Insight
 - Monitor unusual request patterns (e.g., directory brute-forcing).
@@ -97,10 +100,13 @@ Understand how attackers identify and exploit vulnerabilities in web application
 ### Evidence
 
 **General view of Admin Page:**
-![Admin Page](admin-page.png)
+
+<img width="1365" height="767" alt="admin-page png" src="https://github.com/user-attachments/assets/1558e188-34c9-4b00-8001-acbb6634e2af" />
 
 **Admin panel access and unauthorized transaction to account 8881:**
-![Admin Panel Unauthorized Transfer](admin-panel-unauthorized-transfer.png)
+
+<img width="1364" height="767" alt="admin-panel-unauthorized-transfer png" src="https://github.com/user-attachments/assets/d57391ea-c973-425f-9c38-328ff08d1f39" />
+
 
 ### Blue Team Insight
 - Critical assets must be protected with layered security controls.
