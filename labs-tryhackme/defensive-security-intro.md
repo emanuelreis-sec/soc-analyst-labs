@@ -48,6 +48,10 @@ The alert indicated that the external IP address attempted to discover hidden di
 
 The alert was assigned to **SOC Operator John Smith** for further investigation.
 
+Screenshot of evidence:
+
+<img width="1364" height="716" alt="detection-alerts-IDS png" src="https://github.com/user-attachments/assets/c60724d7-1daa-41b6-96b6-8f57317cc301" />
+
 ---
 
 ## Database Access Attempt
@@ -63,6 +67,10 @@ This alert was assigned to **SOC Operator Sarah Johnson** for investigation.
 - Unauthorized access to customer data  
 - Data exfiltration  
 - Manipulation or deletion of sensitive records  
+
+Screenshot of evidence:
+
+
 
 ---
 
@@ -81,6 +89,10 @@ In this scenario, the attacker targeted the **payment form**, attempting to inje
 - Manipulate financial transactions  
 
 Due to the high risk associated with payment systems and sensitive financial data, this type of attack is considered **critical priority** and requires immediate investigation and containment by the technical security team.
+
+Screenshot of evidence:
+
+<img width="1365" height="716" alt="SQL-injection-attempt" src="https://github.com/user-attachments/assets/c3c3b788-ae55-408b-b09d-bba4e9e8ac33" />
 
 ---
 
@@ -102,6 +114,10 @@ The event tracking dashboard showed the following activity trends:
 
 This reduction in suspicious activity suggests that mitigation actions or investigation processes may have successfully reduced the attack activity.
 
+Screenshot of evidence:
+
+<img width="554" height="277" alt="Analysis-event-tracking24H" src="https://github.com/user-attachments/assets/1392ab16-832e-4ba5-bf57-b6f53196e6f7" />
+
 ---
 
 # Task 3 – Identify the Attack
@@ -116,7 +132,7 @@ The activity was detected within a short time window of approximately **2 minute
 
 ---
 
-## Attack Timeline
+## Attack Summary and Timeline
 
 Initial Detection: 14/07/2025 – 10:21:39  
 Total Duration of Suspicious Activity: 16 minutes and 32 seconds  
@@ -131,6 +147,10 @@ Time Observed: **10:39:07**
 
 Although the response returned a 404 status code (page not found), the attempt indicates that the attacker was actively searching for administrative interfaces.
 
+Screenshot of evidence:
+
+<img width="570" height="510" alt="Attack-summary png" src="https://github.com/user-attachments/assets/fadb975e-59c3-446c-97a7-410ade60ec86" />
+
 ---
 
 ## Threat Intelligence Analysis
@@ -144,11 +164,15 @@ Previous Malicious Activity: 47 recorded incidents
 
 This intelligence suggests that the IP address has been previously linked to malicious activities and may be associated with automated attack infrastructure.
 
+Screenshot of evidence:
+
+<img width="577" height="243" alt="Threat-intelligence-analysis png" src="https://github.com/user-attachments/assets/a8c9a9aa-633e-4909-b02c-42b8da6f4858" />
+
 ---
 
 ## Attack Behaviour Analysis
 
-The attacker appeared to be conducting a **systematic reconnaissance attempt**, likely using automated tools to scan multiple web endpoints in search of vulnerable resources.
+The attacker appeared to be conducting a **systematic reconnaissance attempt**, and could likely using automated tools to scan multiple web endpoints in search of vulnerable resources.
 
 This behaviour is consistent with the early stages of a web application attack lifecycle:
 
@@ -189,6 +213,10 @@ This action prevents further traffic from the identified attacker.
 
 However, it is important to note that attackers may attempt to bypass IP blocking by using VPN services, proxy networks, or other infrastructure to change their source IP address.
 
+Screenshot of evidence:
+
+<img width="563" height="505" alt="action-block-source-IPaddress png" src="https://github.com/user-attachments/assets/67fcf87d-cdc1-4074-8e95-d432e6582249" />
+
 ---
 
 ## Rate Limiting Implementation
@@ -201,6 +229,12 @@ Time Window: 60 seconds
 Maximum Requests: 50  
 
 This configuration was considered too permissive for sensitive endpoints such as payment or transfer forms.
+
+Screenshot of evidence:
+
+<img width="551" height="273" alt="action-implement-rate-limiting png" src="https://github.com/user-attachments/assets/fc8f0de1-698c-4e7c-b7cd-3f865e979300" />
+
+---
 
 ### Updated Configuration
 
@@ -252,6 +286,12 @@ Ensure sensitive financial data is not logged in plaintext during security event
 Honeypot Implementation  
 Deploy hidden fields designed to detect automated bot interactions.
 
+Screenshots of evidence:
+
+<img width="301" height="319" alt="Recommended-actions-alerts-of-IDS" src="https://github.com/user-attachments/assets/b9bc549f-eb7d-4b59-ab60-4d6570584a63" />
+
+<img width="528" height="221" alt="Additional-notes-actions-recomendentions-png" src="https://github.com/user-attachments/assets/d3f732f1-ec01-4f0b-b4d7-c94ca7188060" />
+
 ---
 
 ## Next Steps
@@ -264,9 +304,13 @@ Ensure the malicious IP address remains blocked at the firewall level.
 
 Coordinate with the backend development team to confirm secure database query implementation using parameterized queries.
 
+Screenshot of evidence:
+
+<img width="1365" height="720" alt="action-bloked-IPaddress-sucess png" src="https://github.com/user-attachments/assets/ee33f516-c789-444f-a5a0-03db83a5317d" />
+
 ---
 
-# Evidence
+# About the report - My SOC analysis insights perspectives through evidences screenchosts
 
 The analysis documented in this report is supported by visual evidence collected during the investigation process.
 
